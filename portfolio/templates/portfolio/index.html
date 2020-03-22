@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Imran Syed Portfolio</title>
+		
+
+		<link rel="stylesheet" type="text/css" href="static/assets/styles/4.3.1_bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="static/assets/styles/styles.css">
+	</head>
+	<body>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<!--  data-toggle="modal" data-target="#contact-me-modal" -->
+			<li style="float: right;background-color: orange;"><a href="#contact-me-header"  >Contact Me</a></li>
+		</ul>
+		<div id="cover-picture">
+			<img id = "display-picture" src="static/assets/images/display_pic.png">
+			<div id= "intro">
+				<h2>Imran Syed</h2>
+				<h3><i>Professional Software Developer</i></h3>
+			</div>
+			
+		</div>
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-6">
+					<div id="about-me" class="rounded-right">
+						<div class="header">
+							<h3>About Me</h3>
+						</div>
+						
+						<br>
+						<p>I am a Software developer with the bachelors degree <br> in Computer Science from Rutgers University. I have <br>extensive experiece in designing and implementing Applications using HTML,CSS,Bootstrap,JavaScript,Java,Python,Django,Spring, and NodeJs. I also love working with new technologies that I have not yet had a chance to work with. </p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div id= "qualification" class="rounded-left">
+						<div class = "header">
+							<h3>Qualifications</h3>
+						</div>
+						
+						<div class="bachelors">
+							<p><b>Institute:</b> <i>Rutgers University</i></p>
+							<p><b>Major:</b> <i>Computer Science</i></p>
+							<p><b>Degree:</b> <i>Bachelors in Arts & Science</i></p>
+						</div>
+						<div class = "bachelors">
+							<p><b>Institute:</b> <i>New Jersey Institure of Technology</i></p>
+							<p><b>Major:</b> <i>Cyber Security</i></p>
+							<p><b>Degree:</b> <i>Masters in Arts & Science</i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class=" col header">
+					<h3>Projects</h3>
+				</div>
+			</div>
+			<div class="row projects">
+				<div class="col-md-6">
+					<a style="text-decoration: none;" href="https://escholars.co/" target="_blank">
+						<div class="project">
+							<div class="project-img">
+								<img src="static/assets/images/escholars.PNG">
+							</div>
+							<div class="project-description">
+								<p>
+									Online Tutoring website that helps students around the world with their SATs.
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				
+				
+				<div class="col-md-6">
+					<div class="project">
+						<div class="project-img">
+							<img src="static/assets/images/NY.jpg">
+						</div>
+						<div class="project-description">
+							<p>This project is responsible for some
+							crazy shit here man this is so good that clients actaully email me and beg to offer jobs. This is so freaking awesome man. yes</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col">
+				<div class="header" id="contact-me-header">
+					<h3>Contact Me</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col ss" style="margin: 10px;">
+				<div class="contact-me-content" style="display: inline-block; padding: 10px; text-align: left;">
+				<p><b>Email:</b> <i>imran.syed.khalid@gmail.com</i></p>
+				<p><b>Phone: </b><i>(201)-241-7422</i></p> <br>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="logos" >
+				<a href="https://github.com/imranxsyed" target="_blank">
+					<div class=" logo rounded-circle">
+						<img src="static/assets/logos/github.png">
+					</div>
+				</a>
+				<a href="https://www.linkedin.com/in/imran-syed-782b3314a/" target="_blank">
+					<div class=" logo rounded-circle">
+						<img src="static/assets/logos/linked_in.png">
+					</div>
+				</a>
+				</div>
+				
+			</div>
+		</div>
+
+
+
+		<!--Modal!-->
+		<div  style = "color: black;" class="modal fade" id="contact-me-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
+			<div style = "color: black;" class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div  style="background-color: #333; color: white;" class="modal-header">
+						<h5 class="" id="">New message</h5>
+						<button  type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span style = "color:white;" aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form class="needs-validation" novalidate>
+							<div class="form-group">
+								<label for="modal-email-address"  style ="float:left;" class="col-form-label">Email:</label>
+								<input  type="email" class="form-control" id="modal-email-address">
+								<div class="invalid-feedback" id ="invalid-email">
+									Please provide a valid email address.
+								</div>
+							</div>
+							<div class="form-group">
+								<label style ="float:left;" for="modal-message" class="col-form-label">Message:</label>
+								<textarea class="form-control" id="modal-message"></textarea>
+								<div class="invalid-feedback" id ="invalid-message">
+									Please provide some details!
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" id = "btn-close-modal" class="btn btn-warning" data-dismiss="modal">Close</button>
+						<button type="submit" id ="btn-send-email" onClick="btnSendEmail()" class="btn btn-dark">Send message</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="static/assets/js/jquery-3.2.1.slim.min.js"> </script>
+
+		<script src="static/assets/js/jquery-3.4.1.min.js"> </script>
+
+		<script src="static/assets/js/popper.min.js"> </script>
+		
+		<script src="static/assets/js/4.0.0_bootstrap.min.js"> </script>
+	
+		<script type="text/javascript" src="static/assets/js/index.js"></script>
+	</body>
+</html>
