@@ -2,10 +2,12 @@
 <html>
 	<head>
 		<title>Imran Syed Portfolio</title>
-		
 
-		<link rel="stylesheet" type="text/css" href="static/assets/styles/4.3.1_bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="static/assets/styles/styles.css">
+		{% load static %}
+
+
+		<link rel="stylesheet" type="text/css" href="{% static 'portfolio/assets/styles/4.3.1_bootstrap.min.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'portfolio/assets/styles/styles.css' %}">
 	</head>
 	<body>
 		<ul>
@@ -14,7 +16,7 @@
 			<li style="float: right;background-color: orange;"><a href="#contact-me-header"  >Contact Me</a></li>
 		</ul>
 		<div id="cover-picture">
-			<img id = "display-picture" src="static/assets/images/display_pic.png">
+			<img id = "display-picture" src="{% static 'portfolio/assets/images/display_pic.png' %}">
 			<div id= "intro">
 				<h2>Imran Syed</h2>
 				<h3><i>Professional Software Developer</i></h3>
@@ -65,7 +67,7 @@
 					<a style="text-decoration: none;" href="https://escholars.co/" target="_blank">
 						<div class="project">
 							<div class="project-img">
-								<img src="static/assets/images/escholars.PNG">
+								<img src="{% static 'portfolio/assets/images/escholars.PNG' %}">
 							</div>
 							<div class="project-description">
 								<p>
@@ -80,7 +82,7 @@
 				<div class="col-md-6">
 					<div class="project">
 						<div class="project-img">
-							<img src="static/assets/images/NY.jpg">
+							<img src="{% static 'portfolio/assets/images/NY.jpg' %}">
 						</div>
 						<div class="project-description">
 							<p>This project is responsible for some
@@ -112,12 +114,12 @@
 				<div class="logos" >
 				<a href="https://github.com/imranxsyed" target="_blank">
 					<div class=" logo rounded-circle">
-						<img src="static/assets/logos/github.png">
+						<img src="{% static 'portfolio/assets/logos/github.png' %}">
 					</div>
 				</a>
 				<a href="https://www.linkedin.com/in/imran-syed-782b3314a/" target="_blank">
 					<div class=" logo rounded-circle">
-						<img src="static/assets/logos/linked_in.png">
+						<img src="{% static 'portfolio/assets/logos/linked_in.png' %}">
 					</div>
 				</a>
 				</div>
@@ -163,14 +165,15 @@
 			</div>
 		</div>
 		
-		<script src="static/assets/js/jquery-3.2.1.slim.min.js"> </script>
 
-		<script src="static/assets/js/jquery-3.4.1.min.js"> </script>
+		<script src="{% static 'portfolio/assets/js/jquery-3.2.1.slim.min.js' %}"> </script>
 
-		<script src="static/assets/js/popper.min.js"> </script>
+		<script src="{% static 'portfolio/assets/js/jquery-3.4.1.min.js' %}"> </script>
+
+		<script src="{% static 'portfolio/assets/js/popper.min.js' %}"> </script>
 		
-		<script src="static/assets/js/4.0.0_bootstrap.min.js"> </script>
+		<script src="{% static 'portfolio/assets/js/4.0.0_bootstrap.min.js' %}"> </script>
 	
-		<script type="text/javascript" src="static/assets/js/index.js"></script>
+		<script type="text/javascript" src="{% static 'portfolio/assets/js/index.js' %}"></script>
 	</body>
 </html>
