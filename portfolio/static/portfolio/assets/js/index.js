@@ -1,10 +1,12 @@
 
 			$(document).ready(function(){
 				
+				
 				$('#display-picture').animate({top:"0"},1000);
-				$('#intro').animate({left:"0"},1000);
+				
 				$('#qualification').animate({right:"0"},1000);
 				$('#about-me').animate({left:"0"},1000);
+
 			
 				
 			});

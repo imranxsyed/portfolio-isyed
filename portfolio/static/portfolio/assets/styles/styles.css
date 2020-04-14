@@ -37,21 +37,22 @@
 				text-align: center;
 			}
 			#cover-picture{
-				width: 100%;
-				height: 350;
-				color: black;
-				background-image: url('../images/lake.jpg');
+				
+				background-image: url('https://images.unsplash.com/photo-1563991522451-90d2395a8854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9');
 				
 			}
 			
+
+
+
 			#display-picture{
 				height: 200px;
 				width: 200px;
-				border-radius: 100px ;
+				
 				border: 3px solid white;
-				margin-top: 25px;
+				
 				position: relative;
-				top: -300px;
+				
 			}
 			#intro{
 				position: relative;
@@ -85,12 +86,12 @@
 				right: -1000px;
 				
 			}
-			.header{
-				border-bottom: 10px solid transparent;
-				border-image: url("../images/concrete_wall.png") 30 round;
-				text-align: center;
-				padding: 2px;
+			.header_port{
+				background-image: url("https://images.unsplash.com/photo-1563991522451-90d2395a8854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9");
+				height: 500px;
+				font-style: 80px;
 			}
+
 			#qualification .bachelors{
 				border: 2px solid grey;
 				border-bottom-right-radius: 10px;
@@ -171,3 +172,5 @@
 			html{
 				scroll-behavior: smooth;
 			}
+
+
