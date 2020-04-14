@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 			
-			/*body{
-				background-image: url("C:/Users/imran/profitableProgrammer/portfolio_django/portfolio/static/portfolio/assets/images/bg-body.jpg");
-			}*/
+			
 			html{
 				height: 100%;
 				width: 100%;
@@ -189,7 +187,7 @@
 			.education-section{
 				/*margin-top:10px;*/
 				/*background-image: url("https://cdn.pixabay.com/photo/2017/12/22/08/01/paper-3033204_1280.jpg");*/
-				background-color: rgba(0,0,0,0.5);
+				background-color: rgba(255,0,0,0.2);
 				background-size: contain;
 				padding:25px;
 				/*position: relative;*/
