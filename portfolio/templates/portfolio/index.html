@@ -1,187 +1,329 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Imran Syed Portfolio</title>
+<head>
+	<title>Imran Syed Portfolio</title>
 
-		{% load static %}
+	{% load static %}
+
+	<link rel="stylesheet" type="text/css" href="{% static 'portfolio/assets/styles/4.3.1_bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'portfolio/assets/styles/aos.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'portfolio/assets/styles/styles.css' %}">
 
 
-		<link rel="stylesheet" type="text/css" href="{% static 'portfolio/assets/styles/4.3.1_bootstrap.min.css' %}">
-		<link rel="stylesheet" type="text/css" href="{% static 'portfolio/assets/styles/styles.css' %}">
-	</head>
-	<body>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<!--  data-toggle="modal" data-target="#contact-me-modal" -->
-			<li style="float: right;background-color: orange;"><a href="#contact-me-header"  >Contact Me</a></li>
-		</ul>
-		<div id="cover-picture">
-			<img id = "display-picture" src="{% static 'portfolio/assets/images/display_pic.png' %}">
-			<div id= "intro">
-				<h2>Imran Syed</h2>
-				<h3><i>Professional Software Developer</i></h3>
+</head>
+
+
+<body>
+
+
+
+
+	<!-- header section -->
+	<div class="header" data-aos="fade-up">
+
+		<!-- background picture-->
+			<!-- <div class="header-picture">
+			</div> -->
+
+			<div class="header-info">
+				<div class="profile-picture">
+					<img src="{% static 'portfolio/assets/images/display_pic.png' %}">
+				</div>
+
+				<div class="profile-bio">
+					<h2>Imran Syed</h2>
+					<p>Full Stack Developer</p>
+				</div>
 			</div>
+
 			
 		</div>
-		<div class="container">
-			
+
+
+		<!-- Skill Section-->
+		<div class="skill-section  text-white" data-aos="zoom-in">
+
 			<div class="row">
-				<div class="col-md-6">
-					<div id="about-me" class="rounded-right">
-						<div class="header">
-							<h3>About Me</h3>
-						</div>
-						
-						<br>
-						<p>I am a Software developer with the bachelors degree <br> in Computer Science from Rutgers University. I have <br>extensive experiece in designing and implementing Applications using HTML,CSS,Bootstrap,JavaScript,Java,Python,Django,Spring, and NodeJs. I also love working with new technologies that I have not yet had a chance to work with. </p>
+				<div class="col-md-12">
+					<div class="skill-header"> <h4>Overall Skills</h2></div>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<div id= "qualification" class="rounded-left">
-						<div class = "header">
-							<h3>Qualifications</h3>
-						</div>
-						
-						<div class="bachelors">
-							<p><b>Institute:</b> <i>Rutgers University</i></p>
-							<p><b>Major:</b> <i>Computer Science</i></p>
-							<p><b>Degree:</b> <i>Bachelors in Arts & Science</i></p>
-						</div>
-						<div class = "bachelors">
-							<p><b>Institute:</b> <i>New Jersey Institure of Technology</i></p>
-							<p><b>Major:</b> <i>Cyber Security</i></p>
-							<p><b>Degree:</b> <i>Masters in Arts & Science</i></p>
+
+				<div class="row">
+					<div class="col-md-6 align-center vertical-margin-ten">
+						<div class="skill-header-detail" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+							<p align="center">
+								I am a Full Stack Software developer 
+								with extensive experiece in designing and implementing web Applications.
+								I love working with new technologies that I have not yet had a chance to work with.
+							</p>
 						</div>
 					</div>
 				</div>
-			</div>
-			<br>
-			<br>
-			<div class="row">
-				<div class=" col header">
-					<h3>Projects</h3>
-				</div>
-			</div>
-			<div class="row projects">
+				<br>
+				<br>
+				<br>
+				<br>
 
-				<!-- Each Project. Just Copy and paste it-->
-				<div class="col-md-6">
-					<a style="text-decoration: none;" href="https://escholars.co/" target="_blank">
-						<div class="project">
-							<div class="project-img">
-								<img src="{% static 'portfolio/assets/images/escholars.PNG' %}">
-							</div>
-							<div class="project-description">
-								<p>
-									Online Tutoring website that helps students around the world with their SATs.
-								</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				
-				<div class="col-md-6">
-					<a style="text-decoration: none;" href="https://employee-portal-2.herokuapp.com/" target="_blank">
-						<div class="project">
-							<div class="project-img">
-								<img src="{% static 'portfolio/assets/images/employee_portal.png' %}">
-							</div>
-							<div class="project-description">
-								<p>
-									Employee Portal  that helps employers manage their employees.
-								</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				
-				
-				
+				<div class="container-fluid">
+					<div class="row vertical-margin-ten" >
+						<div class="col-md-3 align-center">
 
-			</div>
-		</div>
-		<br>
-		<br>
-		<div class="row">
-			<div class="col">
-				<div class="header" id="contact-me-header">
-					<h3>Contact Me</h3>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col ss" style="margin: 10px;">
-				<div class="contact-me-content" style="display: inline-block; padding: 10px; text-align: left;">
-				<p><b>Email:</b> <i>imran.syed.khalid@gmail.com</i></p>
-				<p><b>Phone: </b><i>(201)-241-7422</i></p> <br>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<div class="logos" >
-				<a href="https://github.com/imranxsyed" target="_blank">
-					<div class=" logo rounded-circle">
-						<img src="{% static 'portfolio/assets/logos/github.png' %}">
-					</div>
-				</a>
-				<a href="https://www.linkedin.com/in/imran-syed-782b3314a/" target="_blank">
-					<div class=" logo rounded-circle">
-						<img src="{% static 'portfolio/assets/logos/linked_in.png' %}">
-					</div>
-				</a>
-				</div>
-				
-			</div>
-		</div>
+							<div class="skill-detail-parent" data-aos="flip-left"  data-aos-duration="1000" >
+								<div class="skill-detail">
+									<h3>Frontend</h3>
+									<ul>
+										<li>HTML</li>
+										<li>CSS</li>
+										<li>Bootstrap</li>
+										<li>JQuery</li>
+										<li>JavaScript</li>
+										<li>Express</li>
+									</ul>
 
+								</div>
 
-
-		<!--Modal!-->
-		<div  style = "color: black;" class="modal fade" id="contact-me-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
-			<div style = "color: black;" class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div  style="background-color: #333; color: white;" class="modal-header">
-						<h5 class="" id="">New message</h5>
-						<button  type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span style = "color:white;" aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<form class="needs-validation" novalidate>
-							<div class="form-group">
-								<label for="modal-email-address"  style ="float:left;" class="col-form-label">Email:</label>
-								<input  type="email" class="form-control" id="modal-email-address">
-								<div class="invalid-feedback" id ="invalid-email">
-									Please provide a valid email address.
+								<div class="skill-detail-icon">
+									<div class="image_div">
+										<img 
+										src="{% static 'portfolio/assets/logos/frontend-icon.svg' %}">
+									</div>
 								</div>
 							</div>
-							<div class="form-group">
-								<label style ="float:left;" for="modal-message" class="col-form-label">Message:</label>
-								<textarea class="form-control" id="modal-message"></textarea>
-								<div class="invalid-feedback" id ="invalid-message">
-									Please provide some details!
+
+						</div>
+						<div class="col-md-3 align-center">
+
+							<div class="skill-detail-parent" data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+								<div class="skill-detail">
+									<h3>Backend</h3>
+									<ul>
+										<li>Python</li>
+										<li>Java</li>
+										<li>C</li>
+										<li>SQL</li>
+										<li>MongoDB</li>
+										<li>SQLite </li>
+										
+									</ul>
+
+								</div>
+
+								<div class="skill-detail-icon">
+									<img style="margin-left: 5px;" 
+									src="{% static 'portfolio/assets/logos/backend-icon.svg' %}">
 								</div>
 							</div>
-						</form>
+
+						</div>
+						<div class="col-md-3 align-center">
+							<div data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+								<div class="skill-detail">
+									<h3>Others</h3>
+									<ul>
+										<li>Spring</li>
+										<li>DJango</li>
+										<li>Flask </li>
+										<li>NodeJS</li>
+										<li>Microsoft Office</li>
+										<li>Linux</li>
+									</ul>
+
+								</div>
+
+								<div class="skill-detail-icon">
+									<img 
+									src="{% static 'portfolio/assets/logos/other-skills-icon.svg' %}">
+								</div>
+							</div>
+
+						</div>
 					</div>
-					<div class="modal-footer">
-						<button type="button" id = "btn-close-modal" class="btn btn-warning" data-dismiss="modal">Close</button>
-						<button type="submit" id ="btn-send-email" onClick="btnSendEmail()" class="btn btn-dark">Send message</button>
+				</div>
+
+
+			</div>
+
+
+			<!--Education -->
+			<div class="education-section"  data-aos="zoom-out-down">
+				<div class="education-header">
+					<h2>Education</h2>
+				</div>
+
+				<br>
+				<br>
+				<div class="education-details">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-md-6">
+								<div class="skill-detail" data-aos="flip-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+									<img src="{% static 'portfolio/assets/logos/rutgers.png' %}" >
+									<p> <span>Major</span> Computer Science</p>
+									<p> <span>Degree: </span>Bachelors in Arts & Science</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="skill-detail" data-aos="flip-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+									<img src="{% static 'portfolio/assets/logos/njit.png' %}" >
+									<p><span>Major:</span> Cyber Security</p>
+									<p><span>Degree: </span> Masters in Arts & Science</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		
 
-		<script src="{% static 'portfolio/assets/js/jquery-3.2.1.slim.min.js' %}"> </script>
 
-		<script src="{% static 'portfolio/assets/js/jquery-3.4.1.min.js' %}"> </script>
+			<!-- Projects -->
+			<div class="project-section" data-aos="fade-down-right">
+				<div class="project-section-header education-header">
+					<h2>Projects</h2>
+				</div>
 
-		<script src="{% static 'portfolio/assets/js/popper.min.js' %}"> </script>
-		
-		<script src="{% static 'portfolio/assets/js/4.0.0_bootstrap.min.js' %}"> </script>
-	
-		<script type="text/javascript" src="{% static 'portfolio/assets/js/index.js' %}"></script>
+
+				<div class="project-section-details">
+
+					<div class="row">
+						<!--  Each Project Goes here-->
+						<div class="col-md-3 project">
+							<a class="project-card" href="https://escholars.co/" target="_blank">
+								<div class="card" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+									<div class="card-image">
+										<img src="{% static 'portfolio/assets/images/escholars.PNG' %}" class="card-img-top">
+									</div>
+									<div class="card-text">
+										<p>
+											Online Tutoring website that helps students around the world with their SATs.
+										</p>
+									</div>
+
+									<div class="card-body">
+										<h5 class="card-title text-center font-italic text-secondary">Escholars</h5>
+										<div class="footer">
+											<ul>
+												<li class="btn btn-dark btn-sm">HTML</li>
+												<li class="btn btn-dark btn-sm">CSS</li>
+												<li class="btn btn-dark btn-sm">DJANGO</li>
+												<li class="btn btn-dark btn-sm">PYTHON</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-3 project">
+							<a class="project-card" href="https://employee-portal-2.herokuapp.com/" target="_blank">
+								<div class="card" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+									<div class="card-image">
+										<img src="{% static 'portfolio/assets/images/employee_portal.png' %}" class="card-img-top">
+									</div>
+									<div class="card-text">
+										<p>
+
+											Employee Portal  that helps employers manage their employees.
+
+										</p>
+									</div>
+
+									<div class="card-body">
+										<h5 class="card-title text-center font-italic text-secondary">Employer Portal</h5>
+										<div class="footer">
+											<ul>
+												<li class="btn btn-dark btn-sm">HTML</li>
+												<li class="btn btn-dark btn-sm">CSS</li>
+												<li class="btn btn-dark btn-sm">DJANGO</li>
+												<li class="btn btn-dark btn-sm">PYTHON</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Footer -->
+			<div class="page-footer" data-aos="zoom-in-down">
+
+				<div class="footer-pic">
+					<div class="row">
+						<div class="col-md-2 align-center" style="text-align: center;">
+							<img src="{% static 'portfolio/assets/images/display_pic.png' %}"
+							style="width: 100px; height: 100px; border-radius: 50px;border: 2px solid white;">
+						</div>
+					</div>
+				</div>
+
+				<div class="page-footer-detail">
+					<div class="row">
+						<div class="col-md-6 align-center vertical-margin-ten" style="text-align: center;">
+							<p>Looking for a full stack developer for a new or an existing application?<br>
+								Send me an email at <a href="#">imran.syed.khalid@gmail.com</a> to discuss the details.</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="page-footer-icons">
+						<div class="row">
+
+							<div class="col-4 align-center vertical-margin-ten">
+
+								<ul>
+									<li>
+										<div class="page-footer-icon">
+											<a href="https://www.linkedin.com/in/imran-syed-782b3314a/" target="_blank">
+												<img src="{% static 'portfolio/assets/logos/linked_in.png' %}">
+											</a>
+										</div>
+									</li>
+
+									<li>
+
+										<div class="page-footer-icon">
+											<a href="https://www.github.com/imranxsyed" target="_blank">
+												<img src="{% static 'portfolio/assets/logos/github.png' %}">
+											</a>
+										</div>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+
+
+
+				<canvas class="background"></canvas>
+
+
+				<script src="{% static 'portfolio/assets/js/jquery-3.2.1.slim.min.js' %}"> </script>
+				<script src="{% static 'portfolio/assets/js/jquery-3.4.1.min.js' %}"> </script>
+				<script src="{% static 'portfolio/assets/js/popper.min.js' %}"> </script>
+				<script src="{% static 'portfolio/assets/js/4.0.0_bootstrap.min.js' %}"> </script>
+				<script type="text/javascript" src="{% static 'portfolio/assets/js/particles.min.js' %}"></script>
+				<script type="text/javascript" src="{% static 'portfolio/assets/js/aos.js' %}"></script>
+				<script type="text/javascript">
+					AOS.init();
+				</script>
+				<script type="text/javascript" src="{% static 'portfolio/assets/js/index.js' %}"></script>
+
+
 	</body>
+
+
+
 </html>
